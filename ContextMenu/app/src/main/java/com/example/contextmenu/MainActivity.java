@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         button = findViewById(R.id.button);
         registerForContextMenu(button);
+
     }
 
     @Override
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onContextItemSelected(@NonNull MenuItem item) {
-        Toast.makeText(this, "You selected "+item.getTitle(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "you selected "+item.getTitle(), Toast.LENGTH_SHORT).show();
         return super.onContextItemSelected(item);
     }
 }
